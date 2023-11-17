@@ -16,11 +16,11 @@ const Contact = () => {
           Get in Touch
         </h2>
         <p>
-          We're here to assist you with all your outdoor power equipment needs.
+          We&apos;re here to assist you with all your outdoor power equipment needs.
           Whether you have questions, require support, or want to discuss your
-          specific requirements, don't hesitate to reach out to us. Our friendly
+          specific requirements, don&apos;t hesitate to reach out to us. Our friendly
           and knowledgeable team is ready to provide you with the assistance you
-          need. Contact us today and let's start the conversation.
+          need. Contact us today and let&apos;s start the conversation.
         </p>
       </motion.div>
 

@@ -70,7 +70,7 @@ const Services = () => {
           <strong>Quality Equipment for Every Need</strong>
           <p>
             Explore our extensive inventory of high-quality equipment for sale.
-            Whether you're upgrading or starting a new project, we have the
+            Whether you&apos;re upgrading or starting a new project, we have the
             right outdoor power equipment to meet your requirements.
           </p>
         </motion.div>

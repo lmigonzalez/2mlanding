@@ -85,7 +85,7 @@ const Partners = () => {
           brands in the outdoor power equipment industry. Our partnerships with
           trusted names like Bobcat, Echo, Toro, Stihl, and more allow us to
           provide you with a wide range of high-quality equipment and tools. We
-          believe in offering our customers the best, and that's why we partner
+          believe in offering our customers the best, and that&apos;s why we partner
           with these renowned brands known for their reliability and
           performance. Explore our selection of products and experience the
           quality that comes with our valued partnerships.
