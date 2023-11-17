@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 const About = () => {
   return (
-    <section className="w-full py-40">
+    <section id="about" className="w-full py-40 scroll-mt-20">
       <div className="w-[1380px] max-w-full m-auto flex justify-between items-center">
         <div className="w-1/2 h-full flex flex-col gap-20 px-10">
           <motion.div
@@ -43,7 +43,7 @@ const About = () => {
         </div>
 
         <div className="w-1/2 space-y-5">
-          <h2 id="about" className="text-4xl font-bold">
+          <h2  className="text-4xl font-bold">
             About 2M
           </h2>
           <h3 className="text-2xl">

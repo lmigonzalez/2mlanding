@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 
 const Services = () => {
   return (
-    <section className="relative w-full bg-[url('/lawn-bg.webp')] bg-center bg-no-repeat bg-cover  text-center py-20 flex flex-col justify-center items-center">
+    <section id="services" className="relative w-full bg-[url('/lawn-bg.webp')] bg-center bg-no-repeat bg-cover  text-center py-20 flex flex-col justify-center items-center scroll-mt-20">
       <div className="absolute w-full h-full top-0 left-0 bg-black bg-opacity-50 z-0"></div>
 
       <div className="relative z-10 mb-10">
-        <h2 id="services" className="text-4xl font-bold text-white">
+        <h2  className="text-4xl font-bold text-white">
           Our Services
         </h2>
       </div>

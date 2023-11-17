@@ -68,7 +68,7 @@ const Partners = () => {
   ];
 
   return (
-    <section className="max-w-full py-20 w-[1380px] m-auto">
+    <section id="partners" className="max-w-full py-20 w-[1380px] m-auto scroll-mt-20">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -76,7 +76,7 @@ const Partners = () => {
         transition={{ delay: 0.8, duration: 0.3 }}
         className="max-w-[700px] m-auto text-center space-y-4"
       >
-        <h2 id="partners" className="text-4xl font-bold">
+        <h2  className="text-4xl font-bold">
           Trusted Brands We Partner With
         </h2>
         <h3 className="text-xl">Leading the Industry</h3>
@@ -100,7 +100,7 @@ const Partners = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.5 }}
               transition={{ delay: (index + 1) / 10, duration: 0.3 }}
-              className="bg-white shadow-2xl  rounded-full hover:border-orange-600 border cursor-pointer flex justify-center items-center w-full aspect-square transition-all p-10"
+              className="bg-white shadow-inner hover:shadow-xl  rounded-full hover:border-orange-600 border cursor-pointer flex justify-center items-center w-full aspect-square transition-all p-10"
               key={index}
             >
               <Image src={item.url} alt={item.name} width={150} height={150} />

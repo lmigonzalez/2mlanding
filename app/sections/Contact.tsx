@@ -4,7 +4,7 @@ import SimpleMap from "../components/GoogleMap";
 import { motion } from "framer-motion";
 const Contact = () => {
   return (
-    <section className="w-[1380px] max-w-full m-auto py-20">
+    <section id="contact" className="w-[1380px] max-w-full m-auto py-20 scroll-mt-20">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -12,7 +12,7 @@ const Contact = () => {
         transition={{ delay: 0.8, duration: 0.3 }}
         className="max-w-[700px] m-auto text-center space-y-4"
       >
-        <h2 id="contact" className="text-4xl font-bold">
+        <h2  className="text-4xl font-bold">
           Get in Touch
         </h2>
         <p>
