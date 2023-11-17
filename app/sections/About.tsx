@@ -65,9 +65,9 @@ const About = () => {
             excellence.
           </p>
           <p>
-            The name "2M" is not just a combination of letters; it&apos;s a tribute
+            The name &quot;2M&quot; is not just a combination of letters; it&apos;s a tribute
             to our founders&apos; last names, the Medinas. This name embodies our
-            deep-rooted family values and commitment to the heritage we've built
+            deep-rooted family values and commitment to the heritage we&apos;ve built
             over the years.
           </p>
           <p>
