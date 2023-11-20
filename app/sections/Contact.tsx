@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import SimpleMap from "../components/GoogleMap";
 import { motion } from "framer-motion";
 import { useFormik } from "formik";
@@ -13,6 +13,14 @@ interface Props {
 }
 
 const Contact = () => {
+  const [showMessage, setShowMessage] = useState(false);
+
+  function hideMessage() {
+    setTimeout(() => {
+      setShowMessage(false);
+    }, 3000);
+  }
+
   const {
     values,
     errors,
@@ -32,17 +40,17 @@ const Contact = () => {
   });
 
   async function onSubmit(value: Props, action: any) {
-    console.log(value);
-
     axios
       .post("/api/contact", values)
       .then((res) => {
-        console.log(res);
+        setShowMessage(true);
       })
       .catch((err) => {
         console.log(err);
       });
-    // action.resetForm();
+
+    hideMessage();
+    action.resetForm();
   }
 
   return (
@@ -121,6 +129,26 @@ const Contact = () => {
               Submit
             </button>{" "}
           </div>
+
+          {showMessage && (
+            <div className="text-center mt-2 text-green-900 flex justify-center items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              Message sent successfully.
+            </div>
+          )}
         </motion.form>
       </div>
     </section>
