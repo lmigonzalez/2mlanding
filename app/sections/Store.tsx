@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 const Store = () => {
   return (
-    <section id="store" className="w-full py-20 px-6 bg-[#202020] scroll-mt-20">
+    <section id="store" className="w-full py-20 px-6 bg-[#202020] scroll-mt-20 px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -26,7 +26,8 @@ const Store = () => {
         <div className="pt-10">
           <Link
             className="py-3 px-10 rounded-lg bg-orange-600 text-white font-bold"
-            href={""}
+            target="_blank"
+            href={"https://2mequipment.com/"}
           >
             Start Shopping
           </Link>

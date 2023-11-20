@@ -13,13 +13,13 @@ const Services = () => {
         </h2>
       </div>
 
-      <div className="w-[1380px] max-w-full grid grid-cols-2 justify-items-center gap-10 relative z-10 m-auto">
+      <div className="w-[1380px] max-w-full grid md:grid-cols-2 justify-items-center gap-10 relative z-10 m-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ delay: 0.4, duration: 0.5 }}
-          className="bg-white rounded p-8 text-start space-y-1"
+          className="bg-white rounded py-8 px-4 text-start space-y-1"
         >
           <h3 className="font-bold text-2xl">Repairs</h3>
           <strong>Fast and Reliable Equipment Repairs</strong>
@@ -34,7 +34,7 @@ const Services = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ delay: 0.6 }}
-          className="bg-white rounded p-8 text-start space-y-1"
+          className="bg-white rounded py-8 px-4 text-start space-y-1"
         >
           <h3 className="font-bold text-2xl">Rent</h3>
           <strong>Affordable Equipment Rentals</strong>
@@ -49,7 +49,7 @@ const Services = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ delay: 0.8, duration: 0.5 }}
-          className="bg-white rounded p-8 text-start space-y-1"
+          className="bg-white rounded py-8 px-4 text-start space-y-1"
         >
           <h3 className="font-bold text-2xl">Part Sales</h3>
           <strong>Genuine Parts for Peak Performance</strong>
@@ -64,7 +64,7 @@ const Services = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ delay: 1 }}
-          className="bg-white rounded p-8 text-start space-y-1"
+          className="bg-white rounded py-8 px-4 text-start space-y-1"
         >
           <h3 className="font-bold text-2xl">Equipment Sales</h3>
           <strong>Quality Equipment for Every Need</strong>

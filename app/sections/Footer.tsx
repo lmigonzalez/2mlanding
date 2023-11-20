@@ -5,10 +5,10 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="pt-10 bg-[#202020] text-white w-full ">
-      <div className="flex justify-between w-[1380px] max-w-full m-auto p-6 ">
-        <div className="flex flex-col gap-2">
+      <div className="flex flex-col md:flex-row gap-10 justify-between w-[1380px] max-w-full m-auto p-6 ">
+        <div className="flex  flex-col gap-2">
           <Image
-            src={"/2M Equipment white logo.png"}
+            src={"/2M.png"}
             alt="logo"
             width={100}
             height={100}

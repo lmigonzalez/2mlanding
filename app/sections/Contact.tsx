@@ -4,7 +4,10 @@ import SimpleMap from "../components/GoogleMap";
 import { motion } from "framer-motion";
 const Contact = () => {
   return (
-    <section id="contact" className="w-[1380px] max-w-full m-auto py-20 scroll-mt-20">
+    <section
+      id="contact"
+      className="w-[1380px] max-w-full m-auto py-20 scroll-mt-20 px-6"
+    >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -12,34 +15,28 @@ const Contact = () => {
         transition={{ delay: 0.8, duration: 0.3 }}
         className="max-w-[700px] m-auto text-center space-y-4"
       >
-        <h2  className="text-4xl font-bold">
-          Get in Touch
-        </h2>
+        <h2 className="text-4xl font-bold">Get in Touch</h2>
         <p>
-          We&apos;re here to assist you with all your outdoor power equipment needs.
-          Whether you have questions, require support, or want to discuss your
-          specific requirements, don&apos;t hesitate to reach out to us. Our friendly
-          and knowledgeable team is ready to provide you with the assistance you
-          need. Contact us today and let&apos;s start the conversation.
+          We&apos;re here to assist you with all your outdoor power equipment
+          needs. Whether you have questions, require support, or want to discuss
+          your specific requirements, don&apos;t hesitate to reach out to us.
+          Our friendly and knowledgeable team is ready to provide you with the
+          assistance you need. Contact us today and let&apos;s start the
+          conversation.
         </p>
       </motion.div>
 
-      <div className="flex items-center gap-10 mt-10 ">
-        <motion.div
-          initial={{ opacity: 0, x: -20 }}
+      <div className="flex flex-col md:flex-row items-center gap-10 mt-10 ">
+        <div className="md:w-1/2 h-[500px] bg-slate-200">
+          <SimpleMap />
+        </div>
+        <motion.form
+          initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ delay: 0.8, duration: 0.3 }}
-          className="w-1/2 h-[500px] bg-slate-200"
+          className="md:w-1/2 flex flex-col gap-5 w-full"
         >
-          <SimpleMap />
-        </motion.div>
-        <motion.form 
-        initial={{ opacity: 0, x: 20 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ delay: 0.8, duration: 0.3 }}
-        className="w-1/2 flex flex-col gap-5">
           <input
             type="text"
             placeholder="Full Name"

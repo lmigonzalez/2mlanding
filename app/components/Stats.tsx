@@ -53,19 +53,19 @@ const Stats = () => {
 
   return (
     <div
-      className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 
-                    flex gap-5 text-white"
+      className="absolute -bottom-14 md:-bottom-20 left-1/2 transform -translate-x-1/2 
+                    flex gap-2 md:gap-5 text-white"
     >
-      <div className="w-40 h-40 bg-orange-600 shadow-xl rounded-xl flex justify-center items-center flex-col p-1 ">
-        <p className="text-4xl font-extrabold">{years}+</p>
-        <p>Years of Excellence</p>
+      <div className="w-28 h-28 md:w-40 md:h-40 bg-orange-600 shadow-xl rounded-xl flex justify-center items-center flex-col p-1 text-center ">
+        <p className="text-xl  md:text-4xl font-extrabold">{years}+</p>
+        <p className="text-sm md:text-base">Years of Excellence</p>
       </div>
-      <div className="w-40 h-40 bg-orange-600 shadow-xl rounded-xl flex justify-center items-center flex-col p-1">
-        <p className="text-4xl font-extrabold">{(stars).toFixed(1)}</p>
+      <div className="w-28 h-28 md:w-40 md:h-40 bg-orange-600 shadow-xl rounded-xl flex justify-center items-center flex-col p-1 text-center">
+        <p className="text-xl  md:text-4xl font-extrabold">{(stars).toFixed(1)}</p>
         <p> Star Reviews</p>
       </div>
-      <div className="w-40 h-40 bg-orange-600 shadow-xl rounded-xl flex justify-center items-center flex-col p-1">
-        <p className="text-4xl font-extrabold">{clients}+</p>
+      <div className="w-28 h-28 md:w-40 md:h-40 bg-orange-600 shadow-xl rounded-xl flex justify-center items-center flex-col p-1 text-center">
+        <p className="text-xl  md:text-4xl font-extrabold">{clients}+</p>
         <p>Happy Clients</p>
       </div>
     </div>
