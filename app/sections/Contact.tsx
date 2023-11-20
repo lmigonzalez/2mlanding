@@ -2,7 +2,49 @@
 import React from "react";
 import SimpleMap from "../components/GoogleMap";
 import { motion } from "framer-motion";
+import { useFormik } from "formik";
+import axios from "axios";
+
+interface Props {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}
+
 const Contact = () => {
+  const {
+    values,
+    errors,
+    touched,
+
+    handleChange,
+    handleSubmit,
+  } = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    },
+    validationSchema: "",
+    onSubmit,
+  });
+
+  async function onSubmit(value: Props, action: any) {
+    console.log(value);
+
+    axios
+      .post("/api/contact", values)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    // action.resetForm();
+  }
+
   return (
     <section
       id="contact"
@@ -36,36 +78,46 @@ const Contact = () => {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ delay: 0.8, duration: 0.3 }}
           className="md:w-1/2 flex flex-col gap-5 w-full"
+          onSubmit={handleSubmit}
         >
           <input
             type="text"
+            name="name"
+            value={values.name}
+            onChange={handleChange}
             placeholder="Full Name"
             className="pb-8 border-b-[2px] caret-orange-600 focus:border-transparent focus:border-b-orange-600  outline-none appearance-none"
           />
           <input
             type="text"
+            name="email"
+            value={values.email}
+            onChange={handleChange}
             placeholder="Email"
             className="pb-8 border-b-[2px] caret-orange-600 focus:border-transparent focus:border-b-orange-600  outline-none appearance-none"
           />
           <input
             type="tel"
+            name="phone"
+            value={values.phone}
+            onChange={handleChange}
             placeholder="Phone Number"
-            className="pb-8 border-b-[2px] caret-orange-600 focus:border-transparent focus:border-b-orange-600  outline-none appearance-none"
-          />
-          <input
-            type="text"
-            placeholder="Message"
             className="pb-8 border-b-[2px] caret-orange-600 focus:border-transparent focus:border-b-orange-600  outline-none appearance-none"
           />
           <textarea
             placeholder="Message"
+            value={values.message}
+            onChange={handleChange}
             name="message"
             className="pb-8 border-b-[2px] caret-orange-600 focus:border-transparent focus:border-b-orange-600  outline-none appearance-none"
           ></textarea>
 
           <div className="flex justify-end">
             {" "}
-            <button className="py-3 px-10 rounded-lg bg-orange-600 text-white font-bold">
+            <button
+              type="submit"
+              className="py-3 px-10 rounded-lg bg-orange-600 text-white font-bold"
+            >
               Submit
             </button>{" "}
           </div>
