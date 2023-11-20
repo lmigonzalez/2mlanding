@@ -36,7 +36,7 @@ function SimpleMap() {
     <GoogleMap
       mapContainerStyle={containerStyle}
       center={center}
-      zoom={10}
+      zoom={16}
       onLoad={onLoad}
       onUnmount={onUnmount}
     >
