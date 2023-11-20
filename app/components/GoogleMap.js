@@ -18,27 +18,13 @@ function SimpleMap() {
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_KEY,
   });
 
-  const [map, setMap] = React.useState(null);
 
-  const onLoad = React.useCallback(function callback(map) {
-    // This is just an example of getting and using the map instance!!! don't just blindly copy!
-    const bounds = new window.google.maps.LatLngBounds(center);
-    map.fitBounds(bounds);
-
-    setMap(map);
-  }, []);
-
-  const onUnmount = React.useCallback(function callback(map) {
-    setMap(null);
-  }, []);
 
   return isLoaded ? (
     <GoogleMap
       mapContainerStyle={containerStyle}
       center={center}
       zoom={16}
-      onLoad={onLoad}
-      onUnmount={onUnmount}
     >
       {/* Add the Marker component */}
       <Marker
