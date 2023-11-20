@@ -109,14 +109,14 @@ const Partners = () => {
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 justify-items-center gap-4 md:gap-10 px-6 mt-10 m-auto w-full">
         {brands.map((item, index) => {
           return (
-            <Link target="_blank" href={item.page}>
+            <Link target="_blank" href={item.page} key={index}>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ delay: (index + 1) / 10, duration: 0.3 }}
                 className="bg-white shadow-inner hover:shadow-xl  rounded-full hover:border-orange-600 border cursor-pointer flex justify-center items-center w-full aspect-square transition-all p-3 md:p-10"
-                key={index}
+                
               >
                 <Image
                   className="rounded-full"
