@@ -10,61 +10,73 @@ const Partners = () => {
       id: 1,
       name: "Bobcat",
       url: "/brands/2m-bobcat.png",
+      page: "https://2mequipment.com/pages/bobcat",
     },
     {
       id: 2,
       name: "BE",
       url: "/brands/2m-be.png",
+      page: "https://2mequipment.com/pages/be-power-equipment",
     },
     {
       id: 3,
       name: "Echo",
       url: "/brands/2m-echo.png",
+      page: "https://2mequipment.com/pages/echo-power-equipment",
     },
     {
       id: 4,
       name: "Jason",
       url: "/brands/2m-jason.png",
+      page: "https://2mequipment.com/pages/jason-industrial",
     },
     {
       id: 5,
       name: "Kawasaki",
       url: "/brands/2m-kawasaki.png",
+      page: "https://2mequipment.com/pages/kawasaki",
     },
     {
       id: 6,
       name: "Kohler",
       url: "/brands/2m-kohler.png",
+      page: "https://2mequipment.com/collections/kohler",
     },
     {
       id: 7,
       name: "Scag",
       url: "/brands/2m-scag.png",
+      page: "https://2mequipment.com/pages/scag-power-equipment",
     },
     {
       id: 8,
       name: "Shindaiwa",
       url: "/brands/2m-shindaiwa.png",
+      page: "https://2mequipment.com/pages/shindaiwa",
     },
     {
       id: 9,
       name: "Shihl",
       url: "/brands/2m-stihl.png",
+      page: "https://2mequipment.com/collections/stihl",
     },
     {
       id: 10,
       name: "Toro",
       url: "/brands/2m-toro.png",
+      page: "https://2mequipment.com/pages/toro",
     },
     {
       id: 11,
       name: "Wacker",
       url: "/brands/2m-wacker.png",
+      page: "https://2mequipment.com/pages/wacker-neuson",
     },
     {
       id: 12,
       name: "Yanmar",
       url: "/brands/2m-yanmar.png",
+      page: "https://2mequipment.com/pages/yanmar",
     },
   ];
 
@@ -97,22 +109,24 @@ const Partners = () => {
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 justify-items-center gap-4 md:gap-10 px-6 mt-10 m-auto w-full">
         {brands.map((item, index) => {
           return (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ delay: (index + 1) / 10, duration: 0.3 }}
-              className="bg-white shadow-inner hover:shadow-xl  rounded-full hover:border-orange-600 border cursor-pointer flex justify-center items-center w-full aspect-square transition-all p-3 md:p-10"
-              key={index}
-            >
-              <Image
-                className="rounded-full"
-                src={item.url}
-                alt={item.name}
-                width={150}
-                height={150}
-              />
-            </motion.div>
+            <Link target="_blank" href={item.page}>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: (index + 1) / 10, duration: 0.3 }}
+                className="bg-white shadow-inner hover:shadow-xl  rounded-full hover:border-orange-600 border cursor-pointer flex justify-center items-center w-full aspect-square transition-all p-3 md:p-10"
+                key={index}
+              >
+                <Image
+                  className="rounded-full"
+                  src={item.url}
+                  alt={item.name}
+                  width={150}
+                  height={150}
+                />
+              </motion.div>
+            </Link>
           );
         })}
       </div>
