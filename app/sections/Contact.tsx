@@ -77,7 +77,7 @@ const Contact = () => {
       </motion.div>
 
       <div className="flex flex-col md:flex-row items-center gap-10 mt-10 ">
-        <div className="md:w-1/2 h-[500px] bg-slate-200">
+        <div className="md:w-1/2 h-[500px] bg-slate-200 hidden md:block">
           <SimpleMap />
         </div>
         <motion.form
@@ -85,7 +85,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ delay: 0.8, duration: 0.3 }}
-          className="md:w-1/2 flex flex-col gap-5 w-full"
+          className="md:w-1/2 flex flex-col gap-5 w-full mt-10 md:mt-0"
           onSubmit={handleSubmit}
         >
           <input
