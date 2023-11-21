@@ -7,12 +7,7 @@ const Footer = () => {
     <footer className="pt-10 bg-[#202020] text-white w-full ">
       <div className="flex flex-col md:flex-row gap-10 justify-between w-[1380px] max-w-full m-auto p-6 ">
         <div className="flex  flex-col gap-2">
-          <Image
-            src={"/2M.png"}
-            alt="logo"
-            width={100}
-            height={100}
-          />
+          <Image src={"/2M.png"} alt="logo" width={100} height={100} />
           <strong>1-888-993-9326</strong>
           <strong>Store Hours:</strong>
           <p>
@@ -54,55 +49,66 @@ const Footer = () => {
           <strong>Follow Us:</strong>
           <ul className="flex gap-3 my-2">
             <li>
-              {" "}
-              <Link href={""}>
-                {" "}
+              <Link
+                href={"mailto:2mmarketplaces@gmail.com"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   src={"/mail.png"}
                   alt="mail icon"
                   width={25}
                   height={25}
-                />{" "}
-              </Link>{" "}
+                />
+              </Link>
             </li>
             <li>
-              {" "}
-              <Link href={""}>
-                {" "}
+              <Link
+                href={"https://www.facebook.com/2mmmowerandtoolllc"}
+                target="_blank"
+              >
                 <Image
                   src={"/facebook.png"}
                   alt="facebook icon"
                   width={25}
                   height={25}
-                />{" "}
-              </Link>{" "}
+                />
+              </Link>
             </li>
             <li>
-              {" "}
-              <Link href={""}>
-                {" "}
+              <Link
+                href={"https://www.facebook.com/2mmmowerandtoolllc"}
+                target="_blank"
+              >
                 <Image
                   src={"/instagram.png"}
                   alt="instagram icon"
                   width={25}
                   height={25}
-                />{" "}
-              </Link>{" "}
+                />
+              </Link>
             </li>
             <li>
-              {" "}
-              <Link href={""}>
-                {" "}
+              <Link
+                href={"https://www.facebook.com/2mmmowerandtoolllc"}
+                target="_blank"
+              >
                 <Image
                   src={"/linkedin.png"}
                   alt="linkedin icon"
                   width={25}
                   height={25}
-                />{" "}
-              </Link>{" "}
+                />
+              </Link>
             </li>
           </ul>
-          <Link href={""}>hello@2mmowertools.com</Link>
+          <Link
+            href={"mailto:2mmarketplaces@gmail.com"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hello@2mmowertools.com
+          </Link>
         </div>
       </div>
       <div className="bg-black py-5">
