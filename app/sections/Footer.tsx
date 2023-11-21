@@ -77,7 +77,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href={"https://www.facebook.com/2mmmowerandtoolllc"}
+                href={"https://www.instagram.com/2mmowerandtool/"}
                 target="_blank"
               >
                 <Image
@@ -90,7 +90,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href={"https://www.facebook.com/2mmmowerandtoolllc"}
+                href={"https://www.linkedin.com/company/2m-mower-&-tool-llc"}
                 target="_blank"
               >
                 <Image
