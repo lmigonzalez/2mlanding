@@ -56,15 +56,15 @@ const Stats = () => {
       className="absolute -bottom-14 md:-bottom-20 left-1/2 transform -translate-x-1/2 
                     flex gap-2 md:gap-5 text-white"
     >
-      <div className="w-28 h-28 md:w-40 md:h-40 bg-orange-600 shadow-xl rounded-xl flex justify-center items-center flex-col p-1 text-center ">
+      <div className="w-28 h-28 md:w-40 md:h-40 bg-orange-700 shadow-xl rounded-xl flex justify-center items-center flex-col p-1 text-center ">
         <p className="text-xl  md:text-4xl font-extrabold">{years}+</p>
         <p className="text-sm md:text-base">Years of Excellence</p>
       </div>
-      <div className="w-28 h-28 md:w-40 md:h-40 bg-orange-600 shadow-xl rounded-xl flex justify-center items-center flex-col p-1 text-center">
+      <div className="w-28 h-28 md:w-40 md:h-40 bg-orange-700 shadow-xl rounded-xl flex justify-center items-center flex-col p-1 text-center">
         <p className="text-xl  md:text-4xl font-extrabold">{(stars).toFixed(1)}</p>
         <p> Star Reviews</p>
       </div>
-      <div className="w-28 h-28 md:w-40 md:h-40 bg-orange-600 shadow-xl rounded-xl flex justify-center items-center flex-col p-1 text-center">
+      <div className="w-28 h-28 md:w-40 md:h-40 bg-orange-700 shadow-xl rounded-xl flex justify-center items-center flex-col p-1 text-center">
         <p className="text-xl  md:text-4xl font-extrabold">{clients}+</p>
         <p>Happy Clients</p>
       </div>

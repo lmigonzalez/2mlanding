@@ -133,7 +133,7 @@ const Partners = () => {
 
       <div className="w-full flex justify-center mt-14">
         <Link
-          className="py-3 px-10 rounded-lg bg-orange-600 text-white font-bold"
+          className="py-3 px-10 rounded-lg bg-orange-700 text-white font-bold"
           target="_blank"
           href={"https://2mequipment.com/pages/brands"}
         >

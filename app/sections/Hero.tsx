@@ -26,7 +26,7 @@ const Hero = () => {
             Our Store
           </Link>
           <Link
-            className="px-4 py-1 md:py-3 md:px-10 rounded-lg bg-orange-600 text-white font-bold hover:shadow-xl transition-all"
+            className="px-4 py-1 md:py-3 md:px-10 rounded-lg bg-orange-700 text-white font-bold hover:shadow-xl transition-all"
             href={"#contact"}
           >
             Contact Us
