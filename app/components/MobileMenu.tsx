@@ -12,7 +12,7 @@ const MobileMenu = () => {
 
   return (
     <div className="relative md:hidden">
-      <button onClick={handleMenu} className="relative z-40">
+      <button role="button" type="button" onClick={handleMenu} className="relative z-40">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

@@ -103,7 +103,7 @@ const Contact = () => {
             value={values.name}
             onChange={handleChange}
             placeholder="Full Name"
-            className="pb-8 border-b-[2px] caret-orange-600 focus:border-transparent focus:border-b-orange-600  outline-none appearance-none"
+            className="pb-8 border-b-[2px] caret-orange-700 focus:border-transparent focus:border-b-orange-700  outline-none appearance-none"
           />
           <input
             type="text"
@@ -111,7 +111,7 @@ const Contact = () => {
             value={values.email}
             onChange={handleChange}
             placeholder="Email"
-            className="pb-8 border-b-[2px] caret-orange-600 focus:border-transparent focus:border-b-orange-600  outline-none appearance-none"
+            className="pb-8 border-b-[2px] caret-orange-700 focus:border-transparent focus:border-b-orange-700  outline-none appearance-none"
           />
           <input
             type="tel"
@@ -119,21 +119,21 @@ const Contact = () => {
             value={values.phone}
             onChange={handleChange}
             placeholder="Phone Number"
-            className="pb-8 border-b-[2px] caret-orange-600 focus:border-transparent focus:border-b-orange-600  outline-none appearance-none"
+            className="pb-8 border-b-[2px] caret-orange-700 focus:border-transparent focus:border-b-orange-700  outline-none appearance-none"
           />
           <textarea
             placeholder="Message"
             value={values.message}
             onChange={handleChange}
             name="message"
-            className="pb-8 border-b-[2px] caret-orange-600 focus:border-transparent focus:border-b-orange-600  outline-none appearance-none"
+            className="pb-8 border-b-[2px] caret-orange-700 focus:border-transparent focus:border-b-orange-700  outline-none appearance-none"
           ></textarea>
 
           <div className="flex justify-end">
             {" "}
             <button
               type="submit"
-              className="py-3 px-10 rounded-lg bg-orange-600 text-white font-bold"
+              className="py-3 px-10 rounded-lg bg-orange-700 text-white font-bold"
             >
               Submit
             </button>{" "}

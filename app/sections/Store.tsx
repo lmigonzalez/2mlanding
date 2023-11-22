@@ -25,7 +25,7 @@ const Store = () => {
         </p>
         <div className="pt-10">
           <Link
-            className="py-3 px-10 rounded-lg bg-orange-600 text-white font-bold"
+            className="py-3 px-10 rounded-lg bg-orange-700 text-white font-bold"
             target="_blank"
             href={"https://2mequipment.com/"}
           >
