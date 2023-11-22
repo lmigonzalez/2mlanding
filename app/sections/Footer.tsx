@@ -45,8 +45,8 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="">
-          <strong>Follow Us:</strong>
+        <div className="flex flex-col gap-2">
+          <strong>Follow Us</strong>
           <ul className="flex gap-3 my-2">
             <li>
               <Link
@@ -106,8 +106,15 @@ const Footer = () => {
             href={"mailto:2mmarketplaces@gmail.com"}
             target="_blank"
             rel="noopener noreferrer"
+            
           >
-            hello@2mmowertools.com
+            sales@2mmowertool.com
+          </Link>
+          <Link
+            href={"https://maps.app.goo.gl/vbc9TMVVoHCE6WeM8"}
+            target="_blank"
+          >
+            13800 SW 142nd Ave, Miami, FL 33186
           </Link>
         </div>
       </div>
