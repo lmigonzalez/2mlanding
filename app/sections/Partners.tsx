@@ -111,8 +111,8 @@ const Partners = () => {
           return (
             <Link target="_blank" href={item.page} key={index}>
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ delay: (index + 1) / 10, duration: 0.3 }}
                 className="bg-white shadow-inner hover:shadow-xl  rounded-full hover:border-orange-600 border cursor-pointer flex justify-center items-center w-full aspect-square transition-all p-3 md:p-10"
