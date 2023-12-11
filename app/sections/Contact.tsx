@@ -161,7 +161,7 @@ const Contact = () => {
         </motion.form>
       </div>
     </section>
-  );
+  )
 };
 
 export default Contact;
