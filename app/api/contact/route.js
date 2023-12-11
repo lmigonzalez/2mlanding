@@ -15,8 +15,8 @@ export async function POST(req) {
     });
     await transport.sendMail({
       from: process.env.MAIL_USER,
-      to: ["2mmarketplaces@gmail.com"],
-      subject: "2M",
+      to: process.env.MAIL_USER,
+      subject: "2M MOWER TOOL",
       html: `<div> 
 			<p> <b>Full Name: </b> ${data.name} </p>
 			<p> <b>Email: </b> ${data.email} </p>
